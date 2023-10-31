@@ -1,12 +1,9 @@
-import logo from "../images/logo.svg";
+import DesktopNav from "./DesktopNav";
 
 export default function Header() {
   return (
-    <>
-      <img src={logo} className=" mx-4 mb-6 mt-4" />
-      <div>
-        <button></button>
-      </div>
-    </>
+    <div className="  ">
+      <DesktopNav />
+    </div>
   );
 }
