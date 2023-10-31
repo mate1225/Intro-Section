@@ -5,10 +5,15 @@ import MainContent from "./components/MainContent";
 
 function App() {
   return (
-    <div className=" mb-4">
-      <Header />
-      <MainContent />
-      <Footer />
+    <div>
+      <div className="mb-4 ">
+        <Header />
+        <div className=" lg:flex lg:justify-center ">
+          <MainContent />
+        </div>
+
+        <Footer />
+      </div>
     </div>
   );
 }

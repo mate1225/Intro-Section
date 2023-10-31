@@ -2,7 +2,7 @@ import logo from "../images/logo.svg";
 
 export default function DesktopNav() {
   return (
-    <div className="ml-[3.89rem] mr-10 mt-[1.31rem]  hidden justify-between text-[0.875rem] font-medium text-Medium_Grey xl:flex">
+    <div className="ml-[3.89rem] mr-10 mt-[1.31rem]  hidden justify-between text-[0.875rem] font-medium text-Medium_Grey lg:flex">
       <div className="flex gap-10  ">
         <img src={logo} className=" mx-4 mb-6 mt-4" />
         <button className="hover:text-Black_Text">Careers</button>

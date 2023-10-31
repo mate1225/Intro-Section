@@ -11,18 +11,19 @@ import HeroImage from "./HeroImage";
 import WorkSection from "./WorkSection";
 export default function MainContent() {
   return (
-    <>
-      <div className=" flex flex-col xl:flex-row-reverse ">
+    <main>
+      <div className=" flex  max-w-[1440px] flex-col lg:flex-row-reverse lg:justify-between  ">
         <HeroImage mobile={hero_mobile} desktop={hero_desktop} />
-        <WorkSection />
+        <div className=" lg:ml-10 xl:mr-[8.71rem] 2xl:ml-[7.81rem] ">
+          <WorkSection />
+          <Client
+            image1={dataBiz}
+            image2={audiophile}
+            image3={meet}
+            image4={maker}
+          />
+        </div>
       </div>
-
-      <Client
-        image1={dataBiz}
-        image2={audiophile}
-        image3={maker}
-        image4={meet}
-      />
-    </>
+    </main>
   );
 }
